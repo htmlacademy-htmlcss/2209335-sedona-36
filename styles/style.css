@@ -50,7 +50,7 @@ body {
   text-align: center;
 }
 
-.advantages-title-about{
+.advantages-title-about {
   color: #000000;
   font-size: 38px;
   line-height: 36px;
@@ -98,14 +98,14 @@ body {
   text-align: center;
 }
 
-.services-title-welcome{
+.services-title-welcome {
   color: #000000;
   font-size: 38px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
 }
-.services-title-staff{
+.services-title-staff {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
@@ -115,7 +115,7 @@ body {
   text-align: center;
 }
 
-.services-title-blue{
+.services-title-blue {
   color:  #000000;
   font-size: 24px;
   line-height: 28px;
@@ -168,7 +168,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.newsletter-title{
+.newsletter-title {
   color: #FFFFFF;
   font-size: 38px;
   line-height: 36px;
@@ -176,13 +176,13 @@ body {
   text-transform: uppercase;
 }
 
-.newsletter-information{
+.newsletter-information {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
 }
 
-.newsletter-form{
+.newsletter-form {
   width: 452px;
   height: 52px;
   background: #F2F2F2;
@@ -190,19 +190,19 @@ body {
   color: #000000;
 }
 
-.button newsletter-button{
+.button newsletter-button {
   background: #82B3D3;
   border-radius: 0px 4px 4px 0px;
   color:  #FFFFFF;
 }
 
-.page-footer{
+.page-footer {
   background-color: #FFFFFF;
 }
 
-.footer-contacts-phone{
+.footer-contacts-phone {
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
-  color: #000000;;
+  color: #000000;
 }
