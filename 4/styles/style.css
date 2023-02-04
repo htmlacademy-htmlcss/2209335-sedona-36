@@ -113,6 +113,9 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
+  width: 505px;
+  height: 72px;
 }
 .services-title-staff {
   font-size: 22px;
@@ -207,6 +210,11 @@ body {
 
 .page-footer {
   background-color: #FFFFFF;
+}
+
+.page-footer-title-catalog{
+  color: #000000;
+
 }
 
 .footer-contacts-phone {
