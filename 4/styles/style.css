@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -48,10 +48,11 @@ body {
 
 .main-index {
   background-color: rgb(107,134,157);
-  background: url("images/index-background.jpg");
-  background: url("images/ladder.svg");
-  background-size: 100% auto;
+  background: url("../images/index-background.jpg");
+  background: url("../images/ladder.svg");
+  background-size: 100% auto,100 auto;
   background-repeat: no-repeat, no-repeat;
+  background-position: none, bottom;
 }
 
 .advantages-about {
@@ -171,7 +172,7 @@ body {
 .newsletter {
   text-align: center;
   background-color: rgb(73,108,129);
-  background: url("images/subscription.jpg");
+  background: url("../images/subscription.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -218,7 +219,7 @@ body {
 .inner-header{
   color:  #FFFFFF;
   background-color: rgb(75,95,116);
-  background: url("images/filter-bacground.jpg");
+  background: url("../images/filter-bacground.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
