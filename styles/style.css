@@ -49,9 +49,9 @@ body {
 .main-index {
   background-color: rgb(107,134,157);
   background: url("../images/index-background.jpg");
-  background-size: 100% auto,100 auto;
-  background-repeat: no-repeat, no-repeat;
-  background-position: none, bottom;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: none;
 }
 
 .advantages-about {
