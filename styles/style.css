@@ -27,6 +27,12 @@ body {
 
 .page-header {
   color:  #000000;
+  background-color: #FFFFFF;
+  text-transform: capitalize;
+}
+
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -34,12 +40,6 @@ body {
   gap: 30px;
   width: 507px;
   height: 64px;
-  background-color: #FFFFFF;
-  text-transform: capitalize;
-}
-
-.navigation-link {
-  font-family: "PT Sans", sans-serif;
   font-size: 28px;
   line-height: 24px;
   font-weight: 700;
@@ -48,6 +48,7 @@ body {
   background-color: #FFFFFF;
   text-decoration: none;
 }
+
 .navigation-link-button{
   color: #FFFFFF;
   background: #756157;
