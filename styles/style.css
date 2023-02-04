@@ -48,10 +48,10 @@ body {
 
 .main-index {
   background-color: rgb(107,134,157);
-  background-image: url("images/index-background.jpg");
-  background-image: url("images/ladder.svg");
+  background: url("images/index-background.jpg");
+  background: url("images/ladder.svg");
   background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat, no-repeat;
 }
 
 .advantages-about {
@@ -171,7 +171,7 @@ body {
 .newsletter {
   text-align: center;
   background-color: rgb(73,108,129);
-  background-image: url("images/subscription.jpg");
+  background: url("images/subscription.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -218,7 +218,7 @@ body {
 .inner-header{
   color:  #FFFFFF;
   background-color: rgb(75,95,116);
-  background-image: url("images/filter-bacground.jpg");
+  background: url("images/filter-bacground.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
