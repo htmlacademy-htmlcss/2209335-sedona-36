@@ -35,7 +35,6 @@ body {
 }
 
 .navigation-link {
-  font-family: "PT Sans", sans-serif;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -72,6 +71,15 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: none;
+}
+.wellcome{
+  position: absolute;
+  left: 30.92%;
+  right: 30.92%;
+  top: 6.65%;
+  bottom: 47.46%;
+  padding-top: 51px;
+  padding-left:371px;
 }
 
 .advantages-about {
@@ -219,6 +227,11 @@ body {
   background: #F2F2F2;
   border-radius: 4px 0px 0px 4px;
   color: #000000;
+}
+
+.canyon{
+  position: fixed;
+  transform: scale(0);
 }
 
 .button newsletter-button {
