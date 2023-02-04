@@ -71,6 +71,11 @@ body {
   background-position: none;
 }
 
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
 .advantages-about {
   text-align: center;
 }
