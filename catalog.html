@@ -54,7 +54,7 @@
 
     <section class="catalog-housing">
          <h2 class="visually-hidden">Список вариантов размещения с фильтрами</h2>
-         <form class
+         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
@@ -95,20 +95,21 @@
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                   <label class="control">
+                  <label class="control">
                     <input class="control-input" type="radio" name="housing-group" value="apartments">
                     <span>Апартаменты</span>
                   </label>
                 </li>
              </ul>
+             <legend class="catalog-filter-title">Стоимость,₽:</legend>
            </fieldset>
            <div>
-             <button class="button" type="submit">Применить</button>
-             <button class="button" type="reset">Сбросить</button>
+             <button class="button-use" type="submit">Применить</button>
+             <button class="button-reset" type="reset">Сбросить</button>
            </div>
           </form>
       </header>
-           <div>
+           <div class="sorting-container">
               <h2 class="select-hotel">Найдено гостиниц:38</h2>
              <select class="select-control" aria-label="Сортировка">
                <option value="cheap">Сначала дешевые</option>
@@ -133,8 +134,8 @@
                     </a>
                     <p class="hotel-card">гостиница</p>
                     <p class="hotel-card-price">от 4000 ₽</p>
-                    <a class="hotel-card-button button" href="#">подробнее</a>
-                    <a class="hotel-card-button button" href="#">в избранное</a>
+                    <a class="hotel-card-button button-detail" href="#">подробнее</a>
+                    <a class="hotel-card-button button-select" href="#">в избранное</a>
                     <div>
                       <img class="hotel-reiting" src="images/stars/star-4.svg" width="140" height="37"  alt="Четыре звезды">
                     </div>
@@ -147,8 +148,8 @@
                      </a>
                       <p class="hotel-card">гостиница</p>
                       <p class="hotel-card-price">от 5000 ₽</p>
-                      <a class="hotel-card-button button" href="#">подробнее</a>
-                      <a class="hotel-card-button button" href="#">в избранное</a>
+                      <a class="hotel-card-button button-detail" href="#">подробнее</a>
+                      <a class="hotel-card-button button-green" href="#">в избранное</a>
                      <div>
                         <img class="hotel-reiting" src="images/stars/star-4-2.svg" width="140" height="37" alt="Четыре звезды">
                      </div>
@@ -161,8 +162,8 @@
                      </a>
                       <p class="hotel-card">гостиница</p>
                       <p class="hotel-card-price">от 2500 ₽</p>
-                      <a class="hotel-card-button button" href="#">подробнее</a>
-                      <a class="hotel-card-button button" href="#">в избранное</a>
+                      <a class="hotel-card-button button-detail" href="#">подробнее</a>
+                      <a class="hotel-card-button button-select" href="#">в избранное</a>
                      <div>
                         <img class="hotel-reiting" src="images/stars/star-3.svg" width="140" height="37" alt="Три звезды">
                      </div>
@@ -175,8 +176,8 @@
                      </a>
                       <p class="hotel-card">гостиница</p>
                       <p class="hotel-card-price">от 1500 ₽</p>
-                      <a class="hotel-cardbutton button" href="#">подробнее</a>
-                      <a class="hotel-card-button button" href="#">в избранное</a>
+                      <a class="hotel-cardbutton button-detail" href="#">подробнее</a>
+                      <a class="hotel-card-button button-select" href="#">в избранное</a>
                      <div>
                         <img class="hotel-reiting" src="images/stars/star-2.svg" width="140" height="37" alt="Две звезды">
                      </div>
