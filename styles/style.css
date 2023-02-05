@@ -28,6 +28,11 @@ body {
   transform: scale(0);
 }
 
+.page-header-logo{
+  margin-left: 70px;
+  margin-right: 30px;
+}
+
 .page-header {
   display: flex;
   color:  #000000;
@@ -36,6 +41,7 @@ body {
 }
 
 .navigation-link {
+  display: flex;
   width: 507px;
   height: 64px;
   font-size: 28px;
@@ -47,10 +53,15 @@ body {
   text-decoration: none;
 }
 
+.navigation-list navigation-user{
+  display: flex;
+}
+
 .navigation-link-button{
   color: #FFFFFF;
   background: #756157;
   text-align: center;
+  text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
