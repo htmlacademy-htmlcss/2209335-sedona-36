@@ -59,7 +59,7 @@ body {
 }
 
 
-.main-index {
+.gorgeous {
   background-color: rgb(107,134,157);
   background: url("../images/index-background.jpg");
   background-size: 100% auto;
@@ -181,6 +181,7 @@ body {
   text-transform: uppercase;
   background-color: #756157;
   border-radius: 4px;
+  text
 
 }
 
@@ -194,6 +195,7 @@ body {
 
 .newsletter-catalog{
   background: #FFFFFF;
+  text-align: center;
 }
 
 .newsletter-title {
@@ -201,6 +203,10 @@ body {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  text-transform: uppercase;
+}
+
+.page-footer-title-catalog{
   text-transform: uppercase;
 }
 
