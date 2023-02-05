@@ -36,7 +36,6 @@ body {
 
 .navigation-link {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   padding: 0px;
   gap: 30px;
@@ -56,7 +55,6 @@ body {
   background: #756157;
   text-align: center;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 8px 50px;
@@ -74,10 +72,6 @@ body {
 }
 .wellcome{
   position: absolute;
-  left: 30.92%;
-  right: 30.92%;
-  top: 6.65%;
-  bottom: 47.46%;
   padding-top: 51px;
   padding-left:371px;
 }
@@ -131,10 +125,12 @@ body {
   text-transform: uppercase;
 }
 .services {
+  display: flex;
   text-align: center;
 }
 
-.services-title-welcome {
+.services-title h1 {
+  display: block;
   color: #000000;
   font-size: 30px;
   line-height: 36px;
@@ -144,7 +140,8 @@ body {
   width: 505px;
   height: 72px;
 }
-.services-title-staff {
+.services-title p {
+  display: block;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
@@ -154,7 +151,7 @@ body {
   text-align: center;
 }
 
-.services-title-blue {
+.services-title h3{
   color:  #000000;
   font-size: 24px;
   line-height: 28px;
