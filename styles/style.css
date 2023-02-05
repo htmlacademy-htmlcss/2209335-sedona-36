@@ -133,12 +133,10 @@ body {
   text-transform: uppercase;
 }
 .services {
-  display: flex;
   text-align: center;
 }
 
 .services-title h1 {
-  display: none;
   color: #000000;
   font-size: 30px;
   line-height: 36px;
@@ -149,13 +147,13 @@ body {
   height: 72px;
 }
 .services-title p {
-  display: none;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
 }
 
 .services-item{
+  display: flex;
   text-align: center;
 }
 
