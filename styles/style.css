@@ -22,7 +22,7 @@ body {
   line-height: 21px;
   color: #333333;
   background-color: #FFFFFF;
-  text-decoration: none;
+
 
 }
 
@@ -44,6 +44,7 @@ body {
   text-align: center;
   color: #000000;
   background-color: #FFFFFF;
+  text-decoration: none;
 
 }
 
@@ -54,7 +55,7 @@ body {
   background: #756157;
   text-align: center;
   text-transform: uppercase;
-
+  text-decoration: none;
 
 }
 
@@ -181,7 +182,7 @@ body {
   text-transform: uppercase;
   background-color: #756157;
   border-radius: 4px;
-  text
+  text-decoration: none;
 
 }
 
@@ -326,6 +327,7 @@ body {
   text-transform: uppercase;
   background: #756157;
   border-radius: 4px;
+  text-decoration: none;
 }
 
 .hotel-card-button button-select{
@@ -336,6 +338,7 @@ body {
   text-transform: uppercase;
   background: #82B3D3;
   border-radius: 4px;
+  text-decoration: none;
 }
 
 .hotel-card-button button-green{
@@ -346,6 +349,7 @@ body {
   text-transform: uppercase;
   background: #7DB54F;
   border-radius: 4px;
+  text-decoration: none;
 }
 
 .rating{
@@ -361,9 +365,7 @@ body {
 .pagination{
   background-color: #82B3D3;
   border-radius: 4px;
-
-
-
+  text-decoration: none;
 }
 
 .pagination-link pagination-current {
@@ -371,6 +373,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   background-color: #F2F2F2;
+  text-decoration: none;
 
 }
 
@@ -378,5 +381,5 @@ body {
   color: #FFFFFF;
   font-size: 20px;
   line-height: 36px;
-
+  text-decoration: none;
 }
