@@ -36,9 +36,6 @@ body {
 }
 
 .navigation-link {
-  align-items: flex-start;
-  padding: 0px;
-  gap: 30px;
   width: 507px;
   height: 64px;
   font-size: 28px;
