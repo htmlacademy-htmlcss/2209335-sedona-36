@@ -29,13 +29,13 @@ body {
 }
 
 .page-header {
+  display: flex;
   color:  #000000;
   background-color: #FFFFFF;
   text-transform: capitalize;
 }
 
 .navigation-link {
-  display: flex;
   align-items: flex-start;
   padding: 0px;
   gap: 30px;
@@ -130,7 +130,7 @@ body {
 }
 
 .services-title h1 {
-  display: block;
+  display: none;
   color: #000000;
   font-size: 30px;
   line-height: 36px;
@@ -141,7 +141,7 @@ body {
   height: 72px;
 }
 .services-title p {
-  display: block;
+  display: none;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
