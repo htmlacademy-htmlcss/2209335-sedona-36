@@ -61,11 +61,12 @@ body {
 
 
 .gorgeous {
-  background-color: rgb(107,134,157);
   background: url("../images/index-background.jpg");
+  background-color: rgb(107,134,157);
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
+
 
 .advantages-about {
   text-align: center;
@@ -90,32 +91,34 @@ body {
   text-align: center;
 }
 
-.advantages-title-left {
+.advantages-real city,
+.dvantages-bridge {
   color:  #FFFFFF;
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
   background-color:  #82B3D3;
-  text-transform: uppercase;
+
 }
 
-.advantages-title {
-  color:  #000000;
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
+.advantages-item {
   background-color:rgba(131, 179, 211, 0.12);
-  text-transform: uppercase;
+
 }
 
-.advantages-title-center {
-  color:  #000000;
+.advantages-beautiful road {
+  background-color:rgba(131, 179, 211, 0.2);
+
+}
+
+.advantages-title-area,
+.advantages-title-road,
+.advantages-title-tourist,
+.advantages-title-bridge {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  background-color:rgba(131, 179, 211, 0.2);
   text-transform: uppercase;
+
 }
+
 .services {
   text-align: center;
 }
@@ -139,11 +142,8 @@ body {
   text-align: center;
 }
 
-.services-title h3{
-  color:  #000000;
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
+.services-housing,
+.services-souvenir{
   background-color:rgba(131, 179, 211, 0.12);
   text-transform: uppercase;
 }
@@ -228,7 +228,7 @@ body {
   transform: scale(0);
 }
 
-.button newsletter-button {
+.newsletter-button {
   background: #82B3D3;
   border-radius: 0px 4px 4px 0px;
   color:  #FFFFFF;
@@ -319,7 +319,7 @@ body {
 
 }
 
-.hotel-card-button button-detail{
+.button-detail{
   color: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -330,7 +330,7 @@ body {
   text-decoration: none;
 }
 
-.hotel-card-button button-select{
+.button-select{
   color: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -341,7 +341,7 @@ body {
   text-decoration: none;
 }
 
-.hotel-card-button button-green{
+.button-green{
   color: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -368,7 +368,7 @@ body {
   text-decoration: none;
 }
 
-.pagination-link pagination-current {
+.pagination-current {
   color: #000000;
   font-size: 20px;
   line-height: 36px;
