@@ -45,8 +45,8 @@ body {
 }
 
 .page-header {
-  color: #000000;
   text-decoration: none;
+  color: inherit;
 }
 
 .navigation-link {
@@ -205,15 +205,13 @@ body {
   color: #FFFFFF;
 }
 
-.page-footer {
-  text-align: center;
-}
-
 
 .footer-contacts-phone {
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
+  text-decoration: none;
+  color: inherit;
 }
 
 
