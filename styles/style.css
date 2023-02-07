@@ -21,8 +21,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  background-color:  #F2F2F2;;
-  ;
+  background-color:  #F2F2F2;
 
 }
 
@@ -90,7 +89,6 @@ body {
 
 .advantages-list {
   background-color: rgba(131, 179, 211, 0.2);
-  color: #000000;
 }
 
 .advantages-image {
@@ -111,6 +109,7 @@ body {
 
 .services {
   text-align: center;
+  color: #000000;
 }
 
 .services-title h2 {
