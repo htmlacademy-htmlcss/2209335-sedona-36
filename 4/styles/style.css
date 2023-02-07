@@ -21,12 +21,12 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  background-color:  #F2F2F2;
+  background-color: #F2F2F2;
 
 }
 
 .container {
-  color: #FFFFFF;
+  background-color: #FFFFFF;
   margin: 0 auto;
   width: 960px;
 }
@@ -109,10 +109,10 @@ body {
 
 .services {
   text-align: center;
-  color: #000000;
 }
 
 .services-title h2 {
+  color: #000000;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -126,6 +126,7 @@ body {
 }
 
 .services-title {
+  color: #000000;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -195,7 +196,6 @@ body {
 }
 
 .newsletter-form {
-  background: #F2F2F2;
   border-radius: 4px 0px 0px 4px;
 }
 
@@ -208,9 +208,7 @@ body {
 .page-footer {
   text-align: center;
 }
- .social{
-  background: #83B3D3;
- }
+
 
 .footer-contacts-phone {
   font-size: 40px;
