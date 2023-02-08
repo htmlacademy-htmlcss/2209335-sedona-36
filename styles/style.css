@@ -119,15 +119,15 @@ body {
 
 .advantages-list {
   background-color: rgba(131, 179, 211, 0.2);
-}
-
-.advantages-item {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 400px;
   min-height: 385px;
+
 }
+
+
 .advantages-image {
   color: #FFFFFF;
   background-color: #82B3D3;
