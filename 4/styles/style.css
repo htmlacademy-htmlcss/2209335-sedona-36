@@ -116,12 +116,11 @@ body {
 }
 
 .advantages-list {
-  background-color: rgba(131, 179, 211, 0.2);
   display: flex;
-  justify-content:  space-evenly;;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   width: 100%;
-  min-height: 385px;
+  background-color: rgba(131, 179, 211, 0.2);
 
 }
 .advantages-item{
