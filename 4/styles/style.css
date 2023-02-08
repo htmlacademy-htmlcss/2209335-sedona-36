@@ -44,9 +44,11 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.page-header{
+  display: flex;
+}
 
 .navigation {
-  display: flex;
   Width: 1200px;
   margin: 0 auto;
   text-decoration: none;
@@ -116,13 +118,15 @@ body {
 .advantages-list {
   background-color: rgba(131, 179, 211, 0.2);
   display: flex;
-  justify-content: space-between;
+  justify-content:  space-evenly;;
   flex-wrap: wrap;
-  width: 400px;
+  width: 100%;
   min-height: 385px;
 
 }
-
+.advantages-item{
+  min-height: 385px;
+}
 
 .advantages-image {
   color: #FFFFFF;
