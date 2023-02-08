@@ -84,9 +84,7 @@ body {
   text-transform: uppercase;
 }
 
-.page-container {
-  margin: 0 auto;
-}
+
 .wellcome{
   display: block;
   margin: 0 auto;
@@ -115,10 +113,6 @@ body {
 }
 
 .advantages-list {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -126,7 +120,6 @@ body {
   width: 400px;
 }
 .advantages-image {
-  display: flex;
   color: #FFFFFF;
   background-color: #82B3D3;
 }
@@ -142,9 +135,6 @@ body {
   text-transform: uppercase;
 }
 
-.index-columns {
-
-}
 
 .services {
   text-align: center;
