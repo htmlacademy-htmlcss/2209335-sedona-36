@@ -74,6 +74,7 @@ body {
 }
 
 .navigation-link {
+  display: flex;
   font-size: 28px;
   line-height: 24px;
   font-weight: 700;
