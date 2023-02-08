@@ -45,23 +45,19 @@ body {
   overflow: hidden;
 }
 
-.page-header {
+.navigation {
   display: flex;
   Width: 1200px;
   margin: 0 auto;
   text-decoration: none;
   color: inherit;
 }
-.logo {
-  width: 138px;
-  margin: 0;
-  padding: 0;
-}
+
 
 
 .navigation-list {
   width: 420px;
-  margin: 30px;
+  margin: 0;
   padding: 0;
   text-decoration: none;
   color: inherit;
