@@ -29,7 +29,7 @@ body {
 .container {
   background-color: #FFFFFF;
   margin: 0 auto;
-  width: 960px;
+  width: 1200px;
 }
 
 .visually-hidden {
@@ -50,6 +50,24 @@ body {
   color: inherit;
 }
 
+.navigation {
+  display: flex;
+  Width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 420px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user{
+  max-width: 300px;
+  margin-left: auto;
+
+}
+
 .navigation-link {
   font-size: 28px;
   line-height: 24px;
@@ -66,6 +84,14 @@ body {
   text-transform: uppercase;
 }
 
+.page-container {
+  margin: 0 auto;
+}
+.wellcome{
+  display: block;
+  margin: 0 auto;
+  width: 460px;
+}
 
 .gorgeous {
   background: url("../images/index-background.jpg");
@@ -89,10 +115,18 @@ body {
 }
 
 .advantages-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
+.advantages-item {
+  width: 400px;
+}
 .advantages-image {
+  display: flex;
   color: #FFFFFF;
   background-color: #82B3D3;
 }
@@ -106,6 +140,10 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.index-columns {
+
 }
 
 .services {
