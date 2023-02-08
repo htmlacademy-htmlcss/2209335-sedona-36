@@ -117,7 +117,7 @@ body {
 
 .advantages-list {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
   background-color: rgba(131, 179, 211, 0.2);
