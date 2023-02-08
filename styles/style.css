@@ -46,6 +46,9 @@ body {
 }
 
 .page-header {
+  display: flex;
+  Width: 1200px;
+  margin: 0 auto;
   text-decoration: none;
   color: inherit;
 }
@@ -55,15 +58,10 @@ body {
   padding: 0;
 }
 
-.page-header {
-  display: flex;
-  Width: 1200px;
-  margin: 0 auto;
-}
 
 .navigation-list {
   width: 420px;
-  margin: 0;
+  margin: 30px;
   padding: 0;
   text-decoration: none;
   color: inherit;
