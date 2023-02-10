@@ -295,7 +295,6 @@ body {
 
 .page-footer {
   display: flex;
-  width: 1060px;
   margin: 0 auto;
 
 
@@ -319,7 +318,7 @@ body {
 
 .inner-header {
   color: #FFFFFF;
-  background: url("../images/filter-bacground.jpg");
+  background: url("../images/filter-background.jpg");
   background-color: rgb(75, 95, 116);
   background-size: 100% auto;
   background-repeat: no-repeat;
