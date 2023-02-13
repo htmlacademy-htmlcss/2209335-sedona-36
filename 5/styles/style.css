@@ -178,12 +178,11 @@ body {
 .advantages-image {
   color: #FFFFFF;
   background-color: #82B3D3;
- width: 1200px;
+  width: 1200px;
 }
 
 .advantages-item:nth-child(even) {
- display: flex;
- justify-content: space-between;
+  display: flex;
   background-color: rgba(131, 179, 211, 0.12);
   min-height: 385px;
   width: 400px;
