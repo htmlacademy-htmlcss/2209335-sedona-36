@@ -77,15 +77,18 @@ body {
 }
 
 .button:hover,
-.footer-social-link:hover {
+.social-card:hover {
   color: #68A2CA;
 
 }
 
 .button:focus,
-.footer-social-link:focus {
+.social-card:focus {
   color: rgba(104, 162, 202, 0.3);
 
+}
+.social-card:active{
+  background: rgba(104, 162, 202, 0.3);
 }
 
 .button:focus,
@@ -102,15 +105,18 @@ body {
 
 
 .button:hover,
-.htmlacademy-link:hover {
-  color: #756157;
+.htmlacademy-logo:hover {
+  background: #756157;
 
 }
 
 .button:focus,
-.htmlacademy-link:focus {
-  color: rgba(117, 97, 87, 0.3);
+.htmlacademy-logo:focus {
+  background: #756157;
 
+}
+.htmlacademy-logo:active{
+  background: rgba(117, 97, 87, 0.3);
 }
 
 .button:hover,
@@ -217,32 +223,36 @@ body {
 }
 
 .page-header {
-  display:flex;
+  display: flex;
   justify-content: space-between;
+  padding-left: 70px;
 }
 
 .logo {
-  position: absolute;
   display: block;
-  top:0;
-  margin-left: 70px;
+  top: 0;
   z-index: auto;
+
+}
+
+.page-header-logo {
+  position: absolute;
 
 }
 
 .navigation {
   display: flex;
+  justify-content: space-between;
   color: inherit;
   text-decoration: none;
-  margin: 0 auto;
-  width: 900px;
+  min-width: 900px;
 
 }
 
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  width: 350px;
+  min-width: 350px;
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -251,7 +261,6 @@ body {
 }
 
 .navigation-user {
-
   margin-left: auto;
   margin-right: 20px;
 
@@ -262,7 +271,7 @@ body {
   min-height: 22px;
 }
 
-.secondary-navigation-link{
+.secondary-navigation-link {
   display: block;
   position: relative;
   width: 44px;
@@ -284,18 +293,25 @@ body {
 
 }
 
+.navigation-item {
+  display: flex;
+  margin: 0;
+}
+
 .navigation-link.active::before {
   position: absolute;
   display: block;
   bottom: 0;
-  width: calc(100% 32px);
-  left:50%;
+  min-width: 68px;
+  height: 0;
   height: 2px;
   background-color: #756257;
-  transform: translate(-50%);
+  transform: translateX(-50%);
+  left: 50%;
   content: "";
 
 }
+
 .navigation-badge {
   display: block;
   position: absolute;
@@ -313,8 +329,8 @@ body {
 
 .navigation-link-button {
   padding: 8px 34px;
-  width: 160px;
-  height: 36px;
+  min-width: 160px;
+  min-height: 36px;
   border-radius: 4px;
   color: #FFFFFF;
   background: #756157;
@@ -324,10 +340,11 @@ body {
   margin: 14px;
   border: none;
 
+
 }
 
 
-.navigation-icon{
+.navigation-icon {
   position: absolute;
   top: 0;
   right: 0;
@@ -767,7 +784,7 @@ body {
 
 .inner-header {
   color: #FFFFFF;
-  background: url("../images/filter-background.jpg");
+  background: url("../images/filtrbackground.jpg");
   background-color: rgb(75, 95, 116);
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -786,16 +803,22 @@ body {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 35px;
+  padding-top: 35px;
+
 
 }
 
 .breadcrumbs {
   display: flex;
-  margin: 0;
+  justify-content: start;
   padding: 0;
+  margin: 0;
   list-style-type: none;
+
+}
+
+.breadcrumbs-item {
+ padding-right: 10px;
 
 }
 
@@ -826,7 +849,7 @@ body {
   display: flex;
   border: none;
   padding: 0;
-  width: 151px;
+  min-width: 151px;
   margin-right: 70px;
 
 }
@@ -878,6 +901,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+
 
 
 }
