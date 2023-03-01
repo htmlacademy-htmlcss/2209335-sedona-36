@@ -61,6 +61,7 @@ body {
 
 .button {
   display: inline-block;
+  vertical-align: middle;
   box-sizing: border-box;
   padding: 8px 26px;
   font-family: inherit;
@@ -87,7 +88,8 @@ body {
   color: rgba(104, 162, 202, 0.3);
 
 }
-.social-card:active{
+
+.social-card:active {
   background: rgba(104, 162, 202, 0.3);
 }
 
@@ -115,7 +117,8 @@ body {
   background: #756157;
 
 }
-.htmlacademy-logo:active{
+
+.htmlacademy-logo:active {
   background: rgba(117, 97, 87, 0.3);
 }
 
@@ -229,9 +232,10 @@ body {
 }
 
 .logo {
+  position: relative;
   display: block;
   top: 0;
-  z-index: auto;
+  z-index: 1;
 
 }
 
@@ -298,19 +302,20 @@ body {
   margin: 0;
 }
 
-.navigation-link.active::before {
-  position: absolute;
-  display: block;
-  bottom: 0;
-  min-width: 68px;
-  height: 0;
-  height: 2px;
-  background-color: #756257;
-  transform: translateX(-50%);
-  left: 50%;
-  content: "";
-
+.navigation-link-current{
+  position: relative;
 }
+
+.navigation-link-current::after{
+position: absolute;
+content: "";
+right: 16px;
+left: 16px;
+bottom: -1px;
+height: 2px;
+background-color: #756257;
+}
+
 
 .navigation-badge {
   display: block;
@@ -357,19 +362,37 @@ body {
 
 
 .wellcome {
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   width: 460px;
 
 }
 
 .gorgeous {
-  background-image: url("../images/vector.svg"), url("../images/index-background.jpg");
-  background-size: 100% auto, 100% auto;
-  background-position: left 0 bottom 1px;
-  background-repeat: no-repeat, no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  background-image: url("../images/index-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   min-height: 485px;
   padding-top: 60px;
-  text-align: center;
+  padding-bottom: 25px;
+
+
+}
+.gorgeous::after{
+  position: absolute;
+  content: "";
+  background-image: url("../images/vector.svg");
+  background-repeat: no-repeat;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 57px;
+
 
 }
 
@@ -408,13 +431,27 @@ body {
 }
 
 .advantages-item {
+  position: relative;
   display: flex;
   min-height: 384px;
   width: 400px;
   margin: 0 auto;
 }
 
+.advantages-item::after{
+  position: absolute;
+  top: 188px;
+  left: 170px;
+  right: 170px;
+  bottom: 195px;
+  width: 60px;
+  height: 2px;
+  content: "";
+  background: rgba(0, 0, 0, 0.3);
+}
+
 .advantages-image {
+  position: relative;
   display: flex;
   color: #FFFFFF;
   background-color: #82B3D3;
@@ -422,9 +459,21 @@ body {
 
 }
 
-.advantages-description {
-  padding-top: 62px;
+.advantages-image::after {
+  position: absolute;
+  top: 188px;
+  left: 170px;
+  right: 170px;
+  bottom: 195px;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  content: "";
+}
 
+.advantages-description {
+padding: 0;
+margin-top: 62px;
 }
 
 
@@ -450,41 +499,23 @@ body {
 
 .advantages-text {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 0px;
+  flex-wrap: wrap;
+  margin: 112px 85px;
   width: 230px;
-  height: 181px;
   text-align: center;
-  margin-left: 85px;
-  margin-top: 102px;
-  margin-right: 85px;
-  margin-bottom: 102px;
+  padding: 0;
 }
 
 .advantages-title {
-  position: relative;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  padding: 0;
 
-}
-
-.advantages-title::after {
-  position: absolute;
-  display: block;
-  top: 86px;
-  left: 85px;
-  right: 85px;
-  bottom: 30px;
-  width: 60px;
-  height: 2px;
-  margin: auto;
-  background-color: rgba(0, 0, 0, 0.3);
-  content: "";
 }
 
 
@@ -505,13 +536,13 @@ body {
 }
 
 .services-about {
-  padding-top: 64px;
-  padding-right: 348px;
-  padding-left: 348px;
-  padding-bottom: 64px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 64px;
 }
 
-.services-title h2 {
+.services-titles {
   text-align: center;
   color: #000000;
   font-size: 30px;
@@ -521,7 +552,7 @@ body {
 
 }
 
-.services-description p {
+.services-descriptions {
   text-align: center;
   font-size: 22px;
   line-height: 26px;
@@ -728,11 +759,10 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0;
   width: 1060px;
   height: 50px;
-  margin-left: 70px;
-  margin-right: 70px;
+  padding-left: 70px;
+  padding-right: 70px;
   margin-top: 40px;
   margin-bottom: 30px;
 
@@ -818,7 +848,7 @@ body {
 }
 
 .breadcrumbs-item {
- padding-right: 10px;
+  padding-right: 10px;
 
 }
 
@@ -890,9 +920,6 @@ body {
 .control-input-min,
 .control-input-max {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   padding: 12px 20px;
   width: 143px;
   height: 48px;
@@ -1002,9 +1029,8 @@ body {
   grid-template-columns: repeat(3, 1fr);
   list-style-type: none;
   gap: 20px;
-  padding: 0;
-  margin-left: 70px;
-  margin-right: 70px;
+  padding-left: 70px;
+  padding-right: 70px;
 
 }
 
