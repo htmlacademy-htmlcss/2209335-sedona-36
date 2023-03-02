@@ -302,18 +302,18 @@ body {
   margin: 0;
 }
 
-.navigation-link-current{
+.navigation-link-current {
   position: relative;
 }
 
-.navigation-link-current::after{
-position: absolute;
-content: "";
-right: 16px;
-left: 16px;
-bottom: -1px;
-height: 2px;
-background-color: #756257;
+.navigation-link-current::after {
+  position: absolute;
+  content: "";
+  right: 16px;
+  left: 16px;
+  bottom: -1px;
+  height: 2px;
+  background-color: #756257;
 }
 
 
@@ -383,7 +383,8 @@ background-color: #756257;
 
 
 }
-.gorgeous::after{
+
+.gorgeous::after {
   position: absolute;
   content: "";
   background-image: url("../images/vector.svg");
@@ -392,7 +393,6 @@ background-color: #756257;
   right: 0;
   bottom: 0;
   height: 57px;
-
 
 }
 
@@ -441,8 +441,8 @@ background-color: #756257;
 
 
 .advantages-description {
-padding: 0;
-margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -483,6 +483,7 @@ margin: 0;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 
 
 }
@@ -495,28 +496,25 @@ margin: 0;
 
 }
 
-.advantages-image.advantages-title::after {
+.advantages-image .advantages-title::after {
   position: absolute;
-  top: 30px;
-  left: 85px;
-  right: 85px;
-  bottom: 30px;
+  left: 50%;
+  bottom: 0;
   width: 60px;
   height: 2px;
   background-color: rgba(255, 255, 255, 0.3);
   content: "";
+
 }
 
-.advantages-title::after{
+.advantages-title::after {
   position: absolute;
-  top: 30px;
-left: auto;
-right: auto;
-  bottom: 30px;
+  left: 50%;
+  bottom: 0;
   width: 60px;
   height: 2px;
-  content: "";
   background: rgba(0, 0, 0, 0.3);
+  content: "";
 }
 
 .services-text {
@@ -834,7 +832,7 @@ right: auto;
   line-height: 78px;
   font-weight: 700;
   padding-top: 35px;
-
+  margin: 0;
 
 }
 
