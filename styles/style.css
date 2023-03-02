@@ -76,50 +76,50 @@ body {
   cursor: pointer;
 
 }
+.footer-social-link svg{
+ fill: #83B3D3;
+}
 
-.button:hover,
-.social-card:hover {
-  color: #68A2CA;
+.footer-social-link:hover svg{
+  fill: #68A2CA;
 
 }
 
-.button:focus,
-.social-card:focus {
-  color: rgba(104, 162, 202, 0.3);
+.footer-social-link:focus svg{
+  fill: rgba(104, 162, 202, 0.3);
 
 }
 
-.social-card:active {
-  background: rgba(104, 162, 202, 0.3);
+.footer-social-link:active svg {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
-.button:focus,
+
 .footer-contacts-phone:focus {
   color: #756157;
 
 }
 
-.button:hover,
+
 .footer-contacts-phone:hover {
   color: rgba(117, 97, 87, 0.3);
 
 }
 
 
-.button:hover,
-.htmlacademy-logo:hover {
-  background: #756157;
+.htmlacademy-link:hover svg{
+  fill: #756157;
 
 }
 
-.button:focus,
-.htmlacademy-logo:focus {
-  background: #756157;
+
+.htmlacademy-link:focus svg{
+  fill: #756157;
 
 }
 
-.htmlacademy-logo:active {
-  background: rgba(117, 97, 87, 0.3);
+.htmlacademy-link:active svg {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .button:hover,
@@ -483,7 +483,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 
 
 }
@@ -509,12 +509,13 @@ body {
   height: 2px;
   background: rgba(0, 0, 0, 0.3);
   content: "";
-  transform: transtaleX(-50%);
+  transform: transLateX(-50%);
 }
 
 .services-text {
+
   text-align: center;
-  min-height: 246px;
+  padding: 0;
 
 }
 
@@ -543,6 +544,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 
+
 }
 
 .services-descriptions {
@@ -550,9 +552,8 @@ body {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
-  padding-left: 355px;
-  padding-right: 355px;
-  padding-bottom: 64px;
+  margin-bottom: 64px;
+
 }
 
 .services-title {
@@ -561,7 +562,7 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-top: 30px;
+
 }
 
 .services-item:nth-child(2n+1) {
@@ -569,28 +570,29 @@ body {
 }
 
 .services-item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 81px 85px;
   width: 400px;
   min-height: 385px;
-  padding-left: 85px;
-  padding-right: 85px;
-  padding-top: 81px;
-  padding-bottom: 81px;
+  text-align: center;
+
 }
 
 .services-list {
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
   padding: 0;
   margin: 0;
-  width: 1200px;
-  list-style-type: none;
 }
 
 .services-image {
   padding-top: 0;
   padding-left: 78px;
   padding-right: 78px;
-  padding-bottom: 30px;
+
 }
 
 .search {
@@ -754,17 +756,19 @@ body {
   align-items: center;
   width: 1060px;
   height: 50px;
-  padding-left: 70px;
-  padding-right: 70px;
+  margin-left: 70px;
   margin-top: 40px;
   margin-bottom: 30px;
+  margin-right: 70px;
+padding: 0;
 
 }
 
 .footer-contacts-phone {
+  display: flex;
   width: 720px;
   min-height: 50px;
-  margin: 0 auto;
+
   padding-left: 195px;
   padding-right: 195px;
   font-size: 40px;
@@ -779,7 +783,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 70px 30px 70px;
+  padding: 0;
+  margin: 0;
 
 }
 
@@ -792,16 +797,17 @@ body {
   text-align: center;
 
 }
-
-.social-item {
-  width: 48px;
-  height: 40px;
-  margin-left: 0;
-  text-align: center;
-  padding-top: 13px;
+.footer-social-link{
+  display:flex;
+  justify-content: center;
+  padding: 11px 13px 11px 13px;
+  min-height: 40px;
 
 }
 
+.htmlacademy-link{
+
+}
 
 
 
@@ -839,7 +845,13 @@ body {
   list-style-type: none;
 
 }
-
+.breadcrumbs-home-link{
+  width: 12px;
+  height: 12px;
+  background-image: url("../images/breadcrumb.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .breadcrumbs-item {
   padding-right: 10px;
 
@@ -847,7 +859,9 @@ body {
 
 .breadcrumbs-link {
   font-size: 16px;
+  line-height: 21px;
   font-weight: 400;
+  text-decoration: none;
 
 }
 
@@ -964,19 +978,26 @@ body {
 }
 
 .select-control {
-  display: flex;
-  flex-wrap: wrap;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  border: 2px solid #E5E5E5;
-  border-radius: 4px;
-  width: 292px;
-  min-height: 49px;
-  padding-left: 20px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+ width: 100%;
+ font-family: inherit;
+ font-size: 18px;
+ appearance: none;
+ border: 2px solid #E5E5E5;
+ border-radius: 4px;
+ padding: 12px 20px;
+ padding-right: 40px;
+ background-image: url("../images/arrow-down.svg");
+ background-repeat: no-repeat;
+ background-position: right 20px center;
+
+}
+.select-control:hover{
+  border-color: #68A2CA;
+
+}
+.select-control:focus{
+  border-color: #3F5E72;
+  outline: none;
 }
 
 .sorting-button {
