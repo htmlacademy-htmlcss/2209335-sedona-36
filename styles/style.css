@@ -497,13 +497,9 @@ body {
 }
 
 .advantages-image .advantages-title::after {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 60px;
-  height: 2px;
+
   background-color: rgba(255, 255, 255, 0.3);
-  content: "";
+
 
 }
 
@@ -515,6 +511,7 @@ body {
   height: 2px;
   background: rgba(0, 0, 0, 0.3);
   content: "";
+  transform: transtaleX(-50%);
 }
 
 .services-text {
