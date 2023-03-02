@@ -431,49 +431,18 @@ background-color: #756257;
 }
 
 .advantages-item {
-  position: relative;
   display: flex;
   min-height: 384px;
   width: 400px;
   margin: 0 auto;
 }
 
-.advantages-item::after{
-  position: absolute;
-  top: 188px;
-  left: 170px;
-  right: 170px;
-  bottom: 195px;
-  width: 60px;
-  height: 2px;
-  content: "";
-  background: rgba(0, 0, 0, 0.3);
-}
 
-.advantages-image {
-  position: relative;
-  display: flex;
-  color: #FFFFFF;
-  background-color: #82B3D3;
-  width: 1200px;
 
-}
-
-.advantages-image::after {
-  position: absolute;
-  top: 188px;
-  left: 170px;
-  right: 170px;
-  bottom: 195px;
-  width: 60px;
-  height: 2px;
-  background-color: rgba(255, 255, 255, 0.3);
-  content: "";
-}
 
 .advantages-description {
 padding: 0;
-margin-top: 62px;
+margin: 0;
 }
 
 
@@ -508,16 +477,47 @@ margin-top: 62px;
 }
 
 .advantages-title {
+  position: relative;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
-  padding: 0;
+
 
 }
 
+.advantages-image {
+  display: flex;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  width: 1200px;
+
+}
+
+.advantages-image.advantages-title::after {
+  position: absolute;
+  top: 30px;
+  left: 85px;
+  right: 85px;
+  bottom: 30px;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  content: "";
+}
+
+.advantages-title::after{
+  position: absolute;
+  top: 30px;
+left: auto;
+right: auto;
+  bottom: 30px;
+  width: 60px;
+  height: 2px;
+  content: "";
+  background: rgba(0, 0, 0, 0.3);
+}
 
 .services-text {
   text-align: center;
@@ -816,7 +816,7 @@ margin-top: 62px;
   color: #FFFFFF;
   background: url("../images/filtrbackground.jpg");
   background-color: rgb(75, 95, 116);
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   padding-left: 70px;
   padding-right: 70px;
