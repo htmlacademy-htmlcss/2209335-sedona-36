@@ -917,7 +917,7 @@ body {
 }
 
 .control:hover .control-mark {
-  background:  #83B3D3;
+  background: #83B3D3;
 }
 
 .control:focus .control-mark {
@@ -995,46 +995,57 @@ body {
   display: flex;
   background: #F2F2F2;
   border-radius: 4px 0px 0px 4px;
+  appearance: textfield;
+  color: #000000;
+}
+
+
+
+.price-input-min,
+.price-input-max {
   width: 143px;
   height: 48px;
-  margin-right: 2px;
-}
-
-.range-input {
-  display: flex;
-  justify-content: space-between;
-  padding: 12px 20px;
-  font: inherit;
-  text-align: center;
-  background-color: transparent;
-  border: none;
-  appearance: textfield;
+  border: 0;
+  background-color: #F2F2F2;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  padding-left: 20px;
+  padding-right: 45px;
 
 }
 
-.range-input::-webkit-outer-spin-button,
-.range-input::-webkit-inner-spin-button {
-  appearance: none;
+.price-wrapper {
+  border: 0;
   margin: 0;
+  padding: 0;
+  width: 288px;
 }
 
-.range-wrapper-inputs {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 36px;
+.price-input-min {
+  border-radius: 4px 0 0 4px;
+}
 
+.price-input-max {
+  border-radius: 0 4px 4px 0;
+}
+.price-input{
+  width: 287px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .range-scale {
   position: relative;
   height: 4px;
-  width: 200px;
-  margin-bottom: 48px;
-  background-color: #FFFFFF;
+  margin-top: 36px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .range-bar {
-
   position: absolute;
   height: 4px;
   background-color: #FFFFFF;
@@ -1074,7 +1085,6 @@ body {
   top: -8px;
   right: -12px;
 }
-
 
 
 .button-use {
