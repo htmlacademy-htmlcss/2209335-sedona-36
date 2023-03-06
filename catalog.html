@@ -30,8 +30,8 @@
             <li class="navigation-item">
               <a class="secondary-navigation-link" href="">
                 <svg class="navigation-icon" area-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20"
-                  height="20" fill="none">
-                  <path fill="#000"
+                  height="20" >
+                  <path
                     d="m19.5 18-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87a8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z" />
                 </svg>
                 <span class="visually-hidden">Поиск</span>
@@ -40,8 +40,8 @@
             <li class="navigation-item">
               <a class="secondary-navigation-link" href="">
                 <svg class="navigation-icon" area-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
-                  width="18" height="17" fill="none">
-                  <path fill="#000"
+                  width="18" height="17" >
+                  <path
                     d="M8.9 17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
                 </svg>
                 <span class="visually-hidden">Избранное</span>
@@ -58,15 +58,13 @@
           <ol class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link breadcrumbs-home-link" href="index.html">
-                <span class="visually-hidden">Главгая</span>
+                <span class="visually-hidden">Главная</span>
               </a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="15" fill="none"><path fill="#fff" d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z"/>
+                <path fill="#fff" d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z"/>
+              </svg>
             </li>
             <li class="breadcrumbs-item">
-              <svg class="breadcrumbs-hotel" area-hidden="true" xmlns="http://www.w3.org/2000/svg" width="8" height="11"
-                fill="none">
-                <path fill="#fff"
-                  d="M6.92 4.97 2.17.72c-.25-.25-.75-.25-1.13 0-.37.25-.25.75 0 1l4.13 3.75-4 3.75a.76.76 0 0 0 0 1c0 .12.37.25.5.25.12 0 .37-.13.5-.25l4.75-4.25a.59.59 0 0 0 0-1Z" />
-              </svg>
               <a class="breadcrumbs-link" href="">Гостиницы</a>
             </li>
           </ol>
@@ -132,18 +130,21 @@
                 <legend class="catalog-filter-title">Стоимость,P</legend>
                 <div class="range">
                   <div class="range-wrapper-inputs">
-                    <label class="catalog-filter-label">
-                      <span class="catalog-filter-label-text">от</span>
+                    <div class="input fields">
+                      <label class="catalog-filter-label">от</label>
                       <input class="price-input-min" type="number" name="min-price" id="from" value="0">
-                    </label>
-                    <label class="catalog-filter-label">
-                      <span class="catalog-filter-label-text">до</span>
+                    </div>
+                    <div class="input fields">
+                      <label class="catalog-filter-label">до</label>
                       <input class="price-input-max" type="number" name="max-price" id="from" value="9000">
-                    </label>
+                    </div>
                   </div>
                   <div class="range-scale">
                     <div class="range-bar" style="left: 10px; width: 206px;">
                       <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden">Изменить максимальную цену.</span>
                       </button>
                     </div>
