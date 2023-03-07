@@ -1016,7 +1016,10 @@ body {
 }
 
 .control:focus .control-mark {
+  background: #ffffff;
   border: 3px solid #83B3D3;
+
+
 }
 
 .control:active .control-mark {
@@ -1177,14 +1180,14 @@ input[type="number"]::-webkit-inner-spin-button {
   background-color: #FFFFFF;
 }
 
-.range-toggle:active {
-  border: 3px solid #83B3D3;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-}
-
 .range-toggle:focus {
   border: 2px solid #83B3D3;
   box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.range-toggle:active {
+  border: 3px solid #83B3D3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -1560,8 +1563,17 @@ input[type="number"]::-webkit-inner-spin-button {
   text-transform: uppercase;
 }
 
+.appointment-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
 .form-label {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1609,6 +1621,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 
 
+
 }
 
 .modal-button-max {
@@ -1619,11 +1632,11 @@ input[type="number"]::-webkit-inner-spin-button {
   right: 0;
   padding: 0;
   border-radius: 4px;
+
 }
 
 
 .count-field {
-  border: none;
   background: #F2F2F2;
   border-radius: 4px;
   font-weight: 700;
@@ -1634,6 +1647,7 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 110px;
   padding: 14px 10px;
   margin: 0;
+  border: none;
 }
 
 .appointment-submit {
@@ -1689,27 +1703,70 @@ input[type="number"]::-webkit-inner-spin-button {
   line-height: 21px;
 }
 
-.attention {
+.tooltip {
   position: absolute;
-  width: 2px;
-  height: 12px;
-  color: #FFFFFF;
-  left: 50%;
-  transform: transLateX(-50%);
-  font-weight: 400;
-  content: "";
-
-
+  margin-top: 7px;
+  margin-left: 42px;
+  width: 256px;
+  min-height: 152px;
 }
 
-.ref {
-  position: relative;
-  width: 26px;
-  height: 26px;
-  background: #83B3D3;
-  border-radius: 50%;
-  margin-left: 10px;
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
 
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  display: block;
+}
+
+.tooltip-toggle:hover .tooltip-icon {
+  color: rgba(131, 179, 211, 0.2);
+}
+
+.tooltip-text {
+  background-color: #333333;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: none;
+  padding: 15px 18px 18px 22px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: block;
+  width: 256px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+.tooltip-text:after {
+  content:'';
+  background-image: url("../images/tooltip-arrow.svg");
+  width: 14px;
+  height: 6px;
+  position:absolute;
+  transform: rotate(180deg);
+  top: 100%;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .modal-filter-group {
@@ -1721,7 +1778,6 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .input buttons {
-
   position: relative;
   display: flex;
   height: 48px;
@@ -1735,12 +1791,10 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .buttons {
   position: relative;
-  display: flex;
-  justify-content: space-between;
 }
 
 .field-group-half {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-right: 88px;
@@ -1750,15 +1804,17 @@ input[type="number"]::-webkit-inner-spin-button {
 
 }
 
-.appointment-form {
-  display: flex;
-  flex-wrap: wrap;
+.minus {
+  top: 50%;
+  transform: transLateY(50%);
+
 
 }
 
-.minus {
+.field-group-half .form-label {
+  margin-right: 46px;
+}
 
-  top: 50%;
-  transform: transLateY(-50%);
-
+.field-group-half-child .form-label {
+  margin-right: 46px;
 }
