@@ -1567,6 +1567,7 @@ input[type="number"]::-webkit-inner-spin-button {
   line-height: 24px;
   padding-top: 12px;
 
+
 }
 
 .calendar-field {
@@ -1590,6 +1591,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 23px;
 
 
 }
@@ -1601,17 +1603,22 @@ input[type="number"]::-webkit-inner-spin-button {
   appearance: textfield;
   width: 40px;
   height: 48px;
+  left: 0;
   padding: 0;
+  border-radius: 4px;
+
+
+
 }
 
 .modal-button-max {
   position: absolute;
   content: "";
-  appearance: textfield;
   width: 40px;
   height: 48px;
+  right: 0;
   padding: 0;
-  margin: 0;
+  border-radius: 4px;
 }
 
 
@@ -1625,7 +1632,7 @@ input[type="number"]::-webkit-inner-spin-button {
   text-align: center;
   min-height: 48px;
   width: 110px;
-  padding: 0;
+  padding: 14px 10px;
   margin: 0;
 }
 
@@ -1683,18 +1690,26 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .attention {
+  position: absolute;
   width: 2px;
   height: 12px;
   color: #FFFFFF;
-  padding: 7px 12px 7px 12px;
+  left: 50%;
+  transform: transLateX(-50%);
+  font-weight: 400;
+  content: "";
+
 
 }
 
 .ref {
+  position: relative;
   width: 26px;
   height: 26px;
   background: #83B3D3;
   border-radius: 50%;
+  margin-left: 10px;
+
 }
 
 .modal-filter-group {
@@ -1706,23 +1721,44 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .input buttons {
+
   position: relative;
   display: flex;
-
   height: 48px;
   width: 110px;
+  margin-left: 46px;
+
+
+
+
+}
+
+.buttons {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.field-group-half {
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 88px;
+
 
 
 
 }
-.field-group-half{
+
+.appointment-form {
   display: flex;
   flex-wrap: wrap;
-  width: 50%;
-
 
 }
-.appointment-form{
-  display: flex;
-  flex-wrap: wrap;
+
+.minus {
+
+  top: 50%;
+  transform: transLateY(-50%);
+
 }
