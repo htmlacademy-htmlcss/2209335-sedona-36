@@ -1144,12 +1144,17 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
+input[type="number"] {
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+}
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+	display: none;
 }
+
 
 .range-scale {
   position: relative;
@@ -1582,6 +1587,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 }
 
+
 .calendar-field {
   display: flex;
   width: 440px;
@@ -1589,10 +1595,16 @@ input[type="number"]::-webkit-inner-spin-button {
   border: none;
   background: #F2F2F2;
   border-radius: 4px;
-  padding-right: 20px;
   background-image: url("../images/calendar.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right 20px center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding-left: 20px;
+
+
+
 
 
 
@@ -1665,14 +1677,6 @@ input[type="number"]::-webkit-inner-spin-button {
   background: #83B3D3;
 }
 
-.calendar-field {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  padding-left: 20px;
-
-}
-
 .form-message {
   display: flex;
   flex-wrap: wrap;
@@ -1714,10 +1718,9 @@ input[type="number"]::-webkit-inner-spin-button {
   border: none;
   width: 26px;
   height: 26px;
-  border-radius:50%;
+  border-radius: 50%;
   background-color: #83B3D3;
   margin-left: 13px;
-
   display: block;
 }
 
@@ -1747,9 +1750,9 @@ input[type="number"]::-webkit-inner-spin-button {
   border-radius: 10px;
   width: 256px;
   position: absolute;
-  bottom: 100%;
   margin-bottom: 7px;
-  left: 50%;
+  left: 27px;
+top: 41px;
   transform: translateX(-50%);
   z-index: 1;
   display: none;
@@ -1763,11 +1766,11 @@ input[type="number"]::-webkit-inner-spin-button {
 .tooltip-text:after {
   content: '';
   background-image: url("../images/tooltip-arrow.svg");
-  width: 14px;
-  height: 6px;
+  width: 19px;
+  height: 9px;
   position: absolute;
-  transform: rotate(180deg);
-  top: 100%;
+  transform: rotate(360deg);
+  bottom: 100%;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -1810,8 +1813,9 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .minus {
-  top: 50%;
-  transform: transLateY(50%);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
 
 }
