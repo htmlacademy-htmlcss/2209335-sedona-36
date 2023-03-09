@@ -591,32 +591,25 @@ body {
   transform: transLateX(-50%);
 }
 
-.services-text {
-  text-align: center;
-  padding: 0;
-
-}
 
 .home{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: url("../images/advantages/home.svg");
   background-repeat: no-repeat;
-  background-position: 81px center;
+  background-position: top 81px center;
+
 
 }
 
 .eat{
   background-image: url("../images/advantages/food.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top 81px center;
 }
 
 .present{
   background-image: url("../images/advantages/present.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top 81px center;
 }
 
 .services {
@@ -659,8 +652,16 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+  padding-top: 183px;
+  margin: 0;
 
 
+}
+.services-description{
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-bottom: 30px;
+  margin: 0;
 }
 
 .services-item:nth-child(2n+1) {
@@ -671,7 +672,6 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 81px 85px;
   width: 400px;
   min-height: 385px;
   text-align: center;
