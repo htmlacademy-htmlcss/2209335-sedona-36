@@ -391,6 +391,7 @@ body {
   bottom: -1px;
   height: 2px;
   background-color: #756257;
+  z-index: 1;
 }
 
 
@@ -512,7 +513,7 @@ body {
   display: flex;
   min-height: 384px;
   width: 400px;
-  margin: 0 auto;
+
 }
 
 
@@ -570,7 +571,7 @@ body {
   display: flex;
   color: #FFFFFF;
   background-color: #82B3D3;
-  width: 1200px;
+  width: 100%;
 
 }
 
@@ -591,10 +592,31 @@ body {
 }
 
 .services-text {
-
   text-align: center;
   padding: 0;
 
+}
+
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/advantages/home.svg");
+  background-repeat: no-repeat;
+  background-position: 81px center;
+
+}
+
+.eat{
+  background-image: url("../images/advantages/food.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.present{
+  background-image: url("../images/advantages/present.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .services {
@@ -603,9 +625,6 @@ body {
 
 }
 
-.services-text {
-  text-align: center;
-}
 
 .services-about {
   display: block;
@@ -641,6 +660,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 
+
 }
 
 .services-item:nth-child(2n+1) {
@@ -666,12 +686,6 @@ body {
   margin: 0;
 }
 
-.services-image {
-  padding-top: 0;
-  padding-left: 78px;
-  padding-right: 78px;
-
-}
 
 .search {
   text-align: center;
@@ -934,6 +948,10 @@ body {
   text-decoration: none;
 }
 
+.breadcrumbs-home {
+  padding-top: 3px;
+}
+
 .breadcrumbs-item:last-child::before {
   display: none;
 }
@@ -1145,14 +1163,14 @@ body {
 }
 
 input[type="number"] {
-	-moz-appearance: textfield;
-	-webkit-appearance: textfield;
-	appearance: textfield;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-	display: none;
+  display: none;
 }
 
 
@@ -1289,29 +1307,41 @@ input[type="number"]::-webkit-inner-spin-button {
 
 }
 
-.button button-light:hover,
-.button button-light:active {
+.button-light:hover {
   border: 2px solid #000000;
+  background: none;
 }
 
-.button button-light:focus {
-  border: 2px solid #68A2CA;
+
+.button-light:focus {
+  border: 2px solid #000000;
+  outline: #68A2CA solid 2px;
+  background: none;
 }
 
-.button button-light:disabled {
+
+
+.button-light:disabled {
   border: 2px solid rgba(0, 0, 0, 0.3);
   color: rgba(0, 0, 0, 0.3);
 }
 
 
 .button-light {
+  display: flex;
+  flex-wrap: wrap;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   margin-right: 8px;
   padding: 17px 16px;
   margin-top: 50px;
-  width: 48px;
-  height: 48px;
+  width: 160px;
+
+}
+
+.sorting-card {
+  width: 16px;
+  height: 14px;
 }
 
 .select-control {
@@ -1320,6 +1350,7 @@ input[type="number"]::-webkit-inner-spin-button {
   padding-bottom: 14px;
   padding-right: 131px;
   margin-top: 50px;
+
 
 }
 
@@ -1347,7 +1378,10 @@ input[type="number"]::-webkit-inner-spin-button {
 .hotel-cards {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 0;
   flex-grow: 1;
   list-style-type: none;
   color: inherit;
@@ -1396,10 +1430,12 @@ input[type="number"]::-webkit-inner-spin-button {
 .hotel {
   display: flex;
   justify-content: space-between;
+
 }
 
 .hotel-reiting {
   margin-top: 16px;
+
 }
 
 .button-detail {
@@ -1474,6 +1510,8 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   padding: 0px 70px;
   list-style: none;
+  margin-top: 80px;
+
 
 }
 
@@ -1481,22 +1519,25 @@ input[type="number"]::-webkit-inner-spin-button {
 .pagination-item {
   margin-right: 8px;
 
+
 }
 
 
 .pagination-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: #FFFFFF;
-  min-height: 60px;
-  min-width: 60px;
   background-color: #82B3D3;
   border-radius: 4px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-align: center;
-  padding: 12px 23px;
+  min-height: 60px;
+  width: 60px;
+
+
 
 }
 
@@ -1506,7 +1547,10 @@ input[type="number"]::-webkit-inner-spin-button {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  padding: 17px 22px;
+  padding-left: 22px;
+  padding-right: 22px;
+  text-align: center;
+
 
 }
 
@@ -1524,6 +1568,7 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
+  display: none;
 }
 
 .modal {
@@ -1752,7 +1797,7 @@ input[type="number"]::-webkit-inner-spin-button {
   position: absolute;
   margin-bottom: 7px;
   left: 27px;
-top: 41px;
+  top: 41px;
   transform: translateX(-50%);
   z-index: 1;
   display: none;
