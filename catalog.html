@@ -57,7 +57,7 @@
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link breadcrumbs-home-link" href="index.html">
+              <a class="breadcrumbs-link" href="index.html">
                 <span class="visually-hidden">Главная</span>
                 <svg class="breadcrumbs-home" xmlns="http://www.w3.org/2000/svg" width="13" height="15" fill="none">
                   <path fill="#fff" d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" />
@@ -94,7 +94,7 @@
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
                       <span class="control-mark"></span>
-                      <span class="control-label">WiFi</span>
+                      <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -171,10 +171,11 @@
             </select>
           </div>
           <div class="sorting-button">
-            <a class="button button-light" href="#">
+            <a class="button button-light current" href="#">
               <span class="visually-hidden">Показать карточки</span>
               <svg class="sorting-card" area-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="14"
-                fill="none">
+              border: 2px solid #000000;
+              fill="none">
                 <svg fill="#000" clip-path="url(#a)">
                   <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
                 </svg>
@@ -224,7 +225,7 @@
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
             </a>
             <div class="hotel-about">
-              <p class="hotel-card">Гостиница</p>
+              <p class="hotel-gest">Гостиница</p>
               <p class="hotel-card-price">От 4000 ₽</p>
             </div>
             <div class="hotel-button">
@@ -243,7 +244,7 @@
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
             </a>
             <div class="hotel-about">
-              <p class="hotel-card">Гостиница</p>
+              <p class="hotel-gest">Гостиница</p>
               <p class="hotel-card-price">От 5000 ₽</p>
             </div>
             <div class="hotel-button">
@@ -262,7 +263,7 @@
               <h3 class="hotel-card-title">Desert Quail Inn</h3>
             </a>
             <div class="hotel-about">
-              <p class="hotel-card">Гостиница</p>
+              <p class="hotel-gest">Гостиница</p>
               <p class="hotel-card-price">От 2500 ₽</p>
             </div>
             <div class="hotel-button">
@@ -280,7 +281,7 @@
               <h3 class="hotel-card-title">GreenTree Inn</h3>
             </a>
             <div class="hotel-about">
-              <p class="hotel-card">Гостиница</p>
+              <p class="hotel-gest">Гостиница</p>
               <p class="hotel-card-price">От 1500 ₽</p>
             </div>
             <div class="hotel-button">
@@ -307,7 +308,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <p class="pagination-link-hidden">...</p>
+            <span class="pagination-link-hidden">...</span>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
@@ -316,7 +317,7 @@
         </section>
         <section class="newsletter-catalog">
           <h2 class="page-footer-title-catalog">Подпишитесь на рассылку</h2>
-          <p class="page-footer-title">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="page-footer-title">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="newsletter-email">Email</label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
@@ -359,7 +360,7 @@
             </li>
           </section>
         </ul>
-        <a class="footer-contacts-phone" href="tel:+78128121212">+7 812 812-12-12</a>
+        <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
           <svg class="htmlacademy-logo" area-hidden="true" xmlns="http://www.w3.org/2000/svg" width="115" height="34">
             <path
