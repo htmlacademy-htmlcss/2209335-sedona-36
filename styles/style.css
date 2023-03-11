@@ -533,6 +533,7 @@ body {
 
 
 .advantages-photo {
+  display: flex;
   flex-shrink: 0;
   min-height: 385px;
   width: 800px;
@@ -682,7 +683,8 @@ body {
 .services-description {
   padding-left: 85px;
   padding-right: 85px;
-  padding-bottom: 30px;
+  padding-bottom: 81px;
+  padding-top: 30px;
   margin: 0;
 }
 
@@ -723,7 +725,8 @@ body {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  margin-top: 0;
+  margin: 0;
+  padding-bottom: 20px;
   text-transform: uppercase;
 
 }
@@ -732,9 +735,10 @@ body {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
-  margin-left: 304px;
-  margin-right: 304px;
-  margin-bottom: 54px;
+  padding-left: 304px;
+  padding-right: 304px;
+  padding-bottom: 62px;
+  margin: 0;
 
 }
 
@@ -747,9 +751,10 @@ body {
   background-color: #756157;
   border-radius: 4px;
   text-decoration: none;
-  padding: 8px 50px;
+  padding: 14px 50px;
   width: 376px;
   min-height: 52px;
+
 
 }
 
@@ -764,9 +769,9 @@ body {
   background-repeat: no-repeat;
   min-height: 415px;
   padding-left: 258px;
-  padding-top: 96px;
   padding-right: 258px;
   padding-bottom: 104px;
+  padding-top: 96px;
 
 }
 
@@ -799,6 +804,9 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
+
+
 
 }
 
@@ -806,8 +814,8 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  margin: 0;
   padding-top: 20px;
+  margin: 0;
 
 
 }
@@ -827,8 +835,7 @@ body {
   text-align: center;
   width: 685px;
   min-height: 52px;
-  margin: 0 auto;
-  padding-top: 54px;
+  margin-top: 53px;
 
 }
 
@@ -896,7 +903,8 @@ body {
   line-height: 40px;
   font-weight: 400;
   text-decoration: none;
-  color: inherit;
+  color: #000000;
+
 
 }
 
@@ -1040,7 +1048,7 @@ body {
   border: none;
   padding: 0;
   min-width: 151px;
-  margin-right: 71px;
+  margin-right: 70px;
   margin-left: 0;
 
 }
@@ -1050,6 +1058,7 @@ body {
   line-height: 24px;
   font-weight: 700;
   margin-bottom: 32px;
+  padding: 0;
 
 
 }
@@ -1146,7 +1155,7 @@ body {
   align-items: center;
   padding: 0;
   margin-left: 70px;
-  margin-top: 58px;
+  margin-top: 55px;
 
 }
 
@@ -1188,7 +1197,7 @@ body {
 
 .price-wrapper {
   border: 0;
-  margin: 0 0 0 70px;
+  margin: 0 0 0 69px;
   padding: 0;
   width: 288px;
 }
@@ -1223,6 +1232,7 @@ input[type="number"]::-webkit-inner-spin-button {
   height: 4px;
   margin-top: 44px;
   background-color: rgba(255, 255, 255, 0.3);
+
 }
 
 .range-bar {
@@ -1241,6 +1251,7 @@ input[type="number"]::-webkit-inner-spin-button {
   border-radius: 5px;
   cursor: pointer;
   content: "";
+
 }
 
 .range-toggle:hover {
@@ -1260,12 +1271,12 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .toggle-min {
   top: -8px;
-  left: -12px;
+  left: -10px;
 }
 
 .toggle-max {
   top: -8px;
-  right: -8px;
+  right: -11px;
 }
 
 .price-input-min:hover {
@@ -1277,6 +1288,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .button-use {
+  font-family: 'PT Sans';
+  font-style: normal;
   color: #FFFFFF;
   font-size: 16px;
   line-height: 20px;
@@ -1288,10 +1301,13 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 191px;
   min-height: 36px;
   margin-bottom: 32px;
+  padding: 0;
 
 }
 
 .button-reset {
+  font-family: 'PT Sans';
+  font-style: normal;
   color: #FFFFFF;
   font-size: 16px;
   line-height: 20px;
@@ -1302,6 +1318,7 @@ input[type="number"]::-webkit-inner-spin-button {
   border: none;
   width: 191px;
   min-height: 36px;
+  padding: 0;
 
 }
 
@@ -1313,6 +1330,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 
 
+
 }
 
 
@@ -1320,6 +1338,7 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 292px;
   font-family: inherit;
   font-size: 18px;
+  line-height: 21px;
   appearance: none;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
@@ -1328,6 +1347,7 @@ input[type="number"]::-webkit-inner-spin-button {
   background-image: url("../images/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
+  margin-top: 50px;
 
 }
 
@@ -1342,7 +1362,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .sorting-type {
-  padding-left: 130px;
+  padding-left: 120px;
+
 }
 
 .sorting-button {
@@ -1352,9 +1373,11 @@ input[type="number"]::-webkit-inner-spin-button {
   align-items: center;
   width: 160px;
   min-height: 48px;
-  padding: 0;
+  padding-top: 30px;
 
 }
+
+
 
 .button-light:hover {
   border: 2px solid #000000;
@@ -1370,16 +1393,12 @@ input[type="number"]::-webkit-inner-spin-button {
   background: none;
 }
 
-.current {
-  border: 2px solid #000000;
-
-}
-
 
 .button-light:disabled {
   border: 2px solid rgba(0, 0, 0, 0.3);
   color: rgba(0, 0, 0, 0.3);
 }
+
 
 
 .button-light {
@@ -1388,26 +1407,21 @@ input[type="number"]::-webkit-inner-spin-button {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   margin-right: 8px;
+  padding: 15px 14px;
 
-  padding: 17px 16px;
-  margin-top: 50px;
-  width: 160px;
+
+
+}
+
+.current {
+  border: 2px solid #000000;
+
 
 }
 
 .sorting-card {
   width: 16px;
   height: 14px;
-}
-
-.select-control {
-  padding-left: 20px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-right: 131px;
-  margin-top: 50px;
-
-
 }
 
 .select-hotel {
@@ -1430,15 +1444,16 @@ input[type="number"]::-webkit-inner-spin-button {
   gap: 20px;
   padding-left: 70px;
   padding-right: 70px;
+  padding-top: 0;
 
 }
 
 .hotel-cards {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-right: 20px;
+  padding-left: 18px;
+  padding-top: 18px;
+  padding-right: 18px;
   padding-bottom: 0;
   flex-grow: 1;
   list-style-type: none;
@@ -1471,8 +1486,9 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .hotel-card-image {
-  object-fit: fill;
   width: 100%;
+  object-fit: fill;
+
 
 }
 
@@ -1491,11 +1507,12 @@ input[type="number"]::-webkit-inner-spin-button {
 
 
 }
-.hotel-gest{
+
+.hotel-gest {
   margin: 0;
 }
 
-.hotel-card-price{
+.hotel-card-price {
   margin: 0;
 }
 
@@ -1581,7 +1598,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .pagination {
   display: flex;
   flex-wrap: wrap;
-  padding: 60px 70px 60px 70px;
+  padding: 64px 70px 60px 70px;
   list-style: none;
   margin: 0;
 
@@ -1648,6 +1665,7 @@ input[type="number"]::-webkit-inner-spin-button {
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
   display: none;
+
 }
 
 .modal {
