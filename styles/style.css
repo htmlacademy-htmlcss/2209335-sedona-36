@@ -1102,7 +1102,7 @@ body {
 
 
 }
-.control-input:focus .control-mark {
+.control-input:focus + .control-mark {
   border: 3px solid #83B3D3;
 
 
