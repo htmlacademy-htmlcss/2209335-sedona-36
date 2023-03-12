@@ -1097,7 +1097,7 @@ body {
   background: #83B3D3;
 }
 
-.control:hover .control-mark {
+.control:hover + .control-mark {
   background: #83B3D3;;
 
 
