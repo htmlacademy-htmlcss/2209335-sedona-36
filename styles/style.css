@@ -990,21 +990,21 @@ body {
 
 }
 
-.breadcrumbs-link:hover{
+.breadcrumbs-link:hover {
   background: #68A2CA;
 }
 
-.breadcrumbs-link:focus{
+.breadcrumbs-link:focus {
   background: #F2F2F2;
 }
 
-.breadcrumbs-link:active{
+.breadcrumbs-link:active {
   border: 3px solid #83B3D3;
   color: #000000;
 
 }
 
-.breadcrumbs-link:disabled{
+.breadcrumbs-link:disabled {
   background: #F2F2F2;
   color: #E6E6E6;
 }
@@ -1093,19 +1093,17 @@ body {
   content: "";
 }
 
+.control-input:focus + .control-mark {
+  outline: 3px solid #83B3D3;
+
+}
+
 .control.advantages-title::after .control-mark {
   background: #83B3D3;
 }
 
-.control:hover + .control-mark {
-  background: #83B3D3;;
-
-
-}
-.control-input:focus + .control-mark {
-  border: 3px solid #83B3D3;
-
-
+.control:hover .control-mark {
+  background: #83B3D3;
 
 }
 
@@ -1481,9 +1479,9 @@ input[type="number"]::-webkit-inner-spin-button {
 
 }
 
-.hotel-card-image{
- width: 300px;
- padding: 0;
+.hotel-card-image {
+  width: 300px;
+  padding: 0;
 
 }
 
@@ -1509,19 +1507,19 @@ input[type="number"]::-webkit-inner-spin-button {
   color: inherit;
 }
 
-.hotel-card-link:hover{
+.hotel-card-link:hover {
   color: #756157;
 }
 
-.hotel-card-link:focus{
+.hotel-card-link:focus {
   color: burlywood;
 }
 
-.hotel-card-link:active{
+.hotel-card-link:active {
   color: brown;
 }
 
-.hotel-card-link:disabled{
+.hotel-card-link:disabled {
   color: #E5E5E5;
 }
 
@@ -1704,7 +1702,7 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
-display: none;
+  display: none;
 
 }
 
