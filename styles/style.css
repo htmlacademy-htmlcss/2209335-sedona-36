@@ -991,21 +991,20 @@ body {
 }
 
 .breadcrumbs-link:hover {
-  background: #68A2CA;
+  text-decoration: underline #32557f solid;
 }
 
 .breadcrumbs-link:focus {
-  background: #F2F2F2;
+  color: #F2F2F2;
+
 }
 
 .breadcrumbs-link:active {
-  border: 3px solid #83B3D3;
-  color: #000000;
+  color: #82B3D3;
 
 }
 
 .breadcrumbs-link:disabled {
-  background: #F2F2F2;
   color: #E6E6E6;
 }
 
@@ -1054,6 +1053,7 @@ body {
 .catalog-filter {
   display: flex;
   width: 1020px;
+
 }
 
 .catalog-filter-group {
@@ -1063,6 +1063,7 @@ body {
   min-width: 151px;
   margin-right: 70px;
   margin-left: 0;
+
 
 }
 
@@ -1090,6 +1091,7 @@ body {
   height: 20px;
   background: #FFFFFF;
   border-radius: 4px;
+  cursor: pointer;
   content: "";
 }
 
@@ -1102,8 +1104,8 @@ body {
   background: #83B3D3;
 }
 
-.control:hover .control-mark {
-  background: #83B3D3;
+.control-input:hover + .control-mark {
+  opacity: 0.6;
 
 }
 
@@ -1144,6 +1146,7 @@ body {
   height: 10px;
   background-color: #3F5E72;
   border-radius: 50%;
+  cursor: pointer;
   content: "";
 }
 
@@ -1181,6 +1184,7 @@ body {
   color: #000000;
   right: 22px;
   top: 12px;
+  cursor: pointer;
   content: "";
 
 }
@@ -1201,12 +1205,14 @@ body {
   font-weight: 700;
   padding-left: 20px;
   padding-right: 42px;
+  cursor: pointer;
 
 }
 
 .input fields {
   position: relative;
   min-height: 48px;
+  cursor: pointer;
 
 }
 
@@ -1318,6 +1324,7 @@ input[type="number"]::-webkit-inner-spin-button {
   min-height: 36px;
   margin-bottom: 32px;
   padding: 0;
+  cursor: pointer;
 
 }
 
@@ -1335,6 +1342,7 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 191px;
   min-height: 36px;
   padding: 0;
+  cursor: pointer;
 
 }
 
@@ -1342,7 +1350,9 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-right: 65px;
+  padding-top: 50px;
+  padding-left: 70px;
+  padding-right: 70px;
 
 
 
@@ -1351,6 +1361,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 
 .select-control {
+  display: flex;
   width: 292px;
   font-family: inherit;
   font-size: 18px;
@@ -1359,11 +1370,10 @@ input[type="number"]::-webkit-inner-spin-button {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   padding: 13px 18px;
-  padding-right: 40px;
   background-image: url("../images/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
-  margin-top: 51px;
+
 
 }
 
@@ -1387,9 +1397,9 @@ input[type="number"]::-webkit-inner-spin-button {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  width: 158px;
+  min-width: 158px;
   min-height: 48px;
-  padding-top: 30px;
+  gap: 8px;
 
 }
 
@@ -1419,11 +1429,14 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .button-light {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  margin-right: 8px;
-  padding: 16px 14px;
+  width: 48px;
+  height: 48px;
+  padding: 0;
 
 
 
@@ -1445,10 +1458,8 @@ input[type="number"]::-webkit-inner-spin-button {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-left: 70px;
-  margin-top: 57px;
-  padding: 0;
-
+  padding-top: 8px;
+  margin: 0;
 
 
 }
@@ -1460,7 +1471,7 @@ input[type="number"]::-webkit-inner-spin-button {
   gap: 20px;
   padding-left: 70px;
   padding-right: 70px;
-  padding-top: 3px;
+  padding-top: 22px;
 
 }
 
